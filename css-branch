@@ -1,41 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script type="text/javascript">
-			function validate(){
-				if(document.regForm.usernameTx.value.length<6 ||document.regForm.usernameTx.value.length>20){
-					alert("PUsername must be < 6 || >20")
-					var email = $("#emailID").val();
-					ValidateEmail(email);
-				}
-			}
-			
-		</script>
-		<link rel="stylesheet" href="style.css">
-		<title>Registration</title>
 	</head>
 	<body>
-		<header>
-			<h1>Sistem Kitani</h1>
-		</header>
 		<form action="addProduct.php" method="POST" id="regForm">
 			<fieldset>
 				<legend id="regFormTitle">Registration</legend>
 					<label> Username: <input type="text" name="usernameTx" id="usernameID"></label>
-					<br>
+					<br><br>
 					<label> Password: <input type="password" name="passwordTx" id="passwordID"></label>
-					<br>
+					<br><br>
 					<label> Email: <input type="text" name="emailTx" id="emailID"></label>
-					<br>
-					<label> Gender: <br>	
-
+					<br><br>
+					<label> Gender: 	
 					 <input type="radio" name="genderSelect" id="genderSelectID" value="Male" checked="checked">Male&nbsp;
 					 <input type="radio" name="genderSelect" id="genderSelectID" value="Female">Female&nbsp;
 					 <input type="radio" name="genderSelect" id="genderSelectID" value="Other">Other<br>
 					</label>
-					<br>
+					<br><br>
 					<input type="submit" value="Register" id="registerBtn"><br>
-					<h2 id='result'></h2>
+
 
 			</fieldset>
 		</form>
